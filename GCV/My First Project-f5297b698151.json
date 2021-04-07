@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "glowing-anagram-310021",
+  "private_key_id": "f5297b698151eb0f41e50e9f6af66a6d09da0ac5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDoB0adffMrSEjb\n+4wiNkQa8SBa25svJtLoISBlyBKLsmR7bVrxJ9Nhaq4++CXblc+SOkjZaFdk5lc5\newA3+wQGtL0Pxfe3J5bCq5D7rOglwYvSCYNp1MJbBzMqlJ6M/p4WZkrUWb6mNJE6\ngeuKTxZpqZlulOIgPOGYIAJbn8P5SwLO8pNHaqauPR1vuI0cuRglh8U9st2pHZL0\nmI39q3CYVq1H32x0fdMO4fzT51P5W/vaCelvkwO8LkS0On69nDIBBe3TX6WYS5UW\nmGoZizV0hU6tG47RufbseHGiSbcydLcAwPMGsyNA3AZjm66pMzNDrxnoPJ7EP/XU\nmo0PUGKTAgMBAAECggEAIt1BA5YyzTyh0gg0sMlVp3S252AbK9UaGM4td42+F6aZ\nCaDPavAQh5FHmGeiDKIwm+jNHHncs+kWjykHyeGaY8WRqQaWp7s3oI22DdMX2OCB\nuXA7glH5WEM3MX0+a7Iwn+4D7W+EwaWhctilw1UJ6ZuV1fNiHPT48upQYGMbx9/v\nzDri+tYyoUxIzKY79/b4YU/HCb7igIkmKYVXp1+2wYj0VrSC75if+rbXEZJ/4fnw\nv9NDdMXWfJf3My7F99bqIftPN0Jz+Wl7eQ3+C/X4g8P8eNJoZdXu0naIIhF0BYLe\neyR4n+k0M+S6ivMc5eFqFIOHSQ4YGa8eF8NYTExzGQKBgQD45BlvDRB548p/2A1S\nnpvlFgmormgRnptu5NQKfHZ2AULhyJwDAwLGr9joDVfZLUa/ZEd0udsylkJEtLLi\ni3gYWiQzQYHcr5hWjr1PX1XX+DvB2TNpTYEt1l10CsckK7ogP3IAkCtTp3U37xUD\nPWZ16thizKKPFByOIszBE3OCOwKBgQDup+Bm7dO8Npuv/JYQdtYuYwcx2agyIZOG\n/+jg0Datolq0GJ7JJXp8yLc5V4ci0BdMCbfQ58Dos+PDtWN4neY6uNjH53ffZkBK\nfPOGgoYLuHTAAbqLBrp29Ap3pH43s6JSR7lom18262i+rwbp/qVD2sDONBf1QWNF\naIjW81sDiQKBgDGnuFdKgPYAdz8ISKgqEqoiumyX1xVk0lfOeWtaJ3wlhkVrc4y6\nRgyDur+ZIeSnPs0iYYstJUkzZycz8dh2wNAC8+Px9smjkr36HlS+jW7YDHwBLFue\n5d3SPbTQDajuvGSAo+ru2GYJK76sCUIrNszhvKgBcZEgDw5gbP88NThPAoGAGWoR\nMITVDm72R1hrlpdBGbF7+6gFDEmdDzxDTWV+3SCz7gfNKPhvwcgSEu4qOt/UC0nh\npEJ5vY4ijB3N2PNfqBM1KpyQnF6kLAqAWGuf4LGk5SmJ9vIhezdjwffnZQEhIQf4\nS5Z4Hj4VanDzGIoAiWhLLepIPtrWunZ2VAWYRJkCgYEAozQQV6g+m+g61djRDai4\n5g0fbjgOJ8lLXFCeHd6Ga5JZA0UI1PDKot0C5wcBrcbNWw/OKbBW6ZrSALtlcfVt\ndKm6ixVhSRcGomggFBjnkDB2OjUo8hrCe0biwvo5J9cbMY0ol6ZNEWq1p3pUISl1\nEj/2eMFP2uiBvg9fXz8n7Yg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "label-detection@glowing-anagram-310021.iam.gserviceaccount.com",
+  "client_id": "107099212561071895011",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/label-detection%40glowing-anagram-310021.iam.gserviceaccount.com"
+}
