@@ -1,11 +1,14 @@
 #script to generate and save adversarial images
 #mostly taken from foolbox docs/examples
 #---------------------------------------
-#imagenet image params
+#image params
 batch = 1
 channels = 3
-size = 224
-classes = 1000
+#size for imagenet is 224, for cifar10 and cifar100 is 32, for mnist is 28
+size = 32
+#classes for imagenet is 1000, for cifar10 is 10
+classes = 10
+
 
 import foolbox, torch
 import matplotlib.pyplot as plt
@@ -40,10 +43,12 @@ def showCompare(image, adverseImage):
     plt.axis('off')
     plt.show()
 
+#only trained on imagenet
 resnet = models.resnet34(pretrained=True).eval()
 preprocessing = dict(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], axis=-3)
 model = foolbox.models.PyTorchModel(resnet, bounds=(0,1), preprocessing=preprocessing)
-images, labels = foolbox.utils.samples(model, dataset='imagenet', batchsize=batch, data_format='channels_first', bounds=(0, 1))
+images, labels = foolbox.utils.samples(model, dataset='cifar10', batchsize=batch, data_format='channels_first', bounds=(0, 1))
+print(images.shape)
 images = images.reshape(batch, channels, size, size)
 labels = labels.type(torch.long)
 print(images.shape)
@@ -73,8 +78,8 @@ for x, attack in enumerate(attacks):
             #this currently jus names each images after its epsilon value, and the (useless) float value class label.
             #this is less than ideal, need to get proper class label
             filepath = 'pics/'+str(attackNames[x])+'/_'+str(epsilons[j])+'_'+str(labels[i])+'.png'
-            save_image(raw_advs[j], filepath)
-            #showCompare(images[i],raw_advs[i])
+            #save_image(raw_advs[j], filepath)
+            showCompare(images[i],raw_advs[j])
     for y in raw_advs:
         adv_acc = foolbox.utils.accuracy(model, y, labels)
         print(f"adv accuracy:  {adv_acc * 100:.1f} %")

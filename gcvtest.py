@@ -4,7 +4,7 @@ from google.cloud import vision
 import io
 
 #set image path
-path = path + '\\tensor(243).png'
+path = path + '\\pics\\tensor(243).png'
 
 def detect_labels(path):
     """Detects labels in the file."""
