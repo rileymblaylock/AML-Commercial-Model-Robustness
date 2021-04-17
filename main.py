@@ -2,7 +2,7 @@
 #mostly taken from foolbox docs/examples
 #---------------------------------------
 #image params
-batch = 5
+batch = 20
 channels = 3
 #size for imagenet is 224, for cifar10 and cifar100 is 32, for mnist is 28
 size = 224
@@ -56,6 +56,44 @@ print(images.shape)
 print("Labels: ", labels)
 clean_acc = foolbox.utils.accuracy(model, images, labels)
 print(f"clean accuracy:  {clean_acc * 100:.1f} %")
+labelsReal = {243: 'bull mastiff',
+            559: 'folding chair',
+            438: 'beaker',
+            990: 'buckeye, horse chestnut, conker',
+            949: 'strawberry',
+            853: 'thatch, thatched roof',
+            609: 'jeep, landrover',
+            915: 'yurt',
+            455: 'bottlecap',
+            541: 'drum, membranophone, tympan',
+            630: 'Loafer',
+            741: 'prayer rug, prayer mat',
+            471: 'cannon',
+            129: 'spoonbill',
+            99: 'goose',
+            251: 'dalmatian, coach dog, carriage dog',
+            22: 'bald eagle, American eagle, Haliaeetus leucocephalus',
+            317: 'leafhopper',
+            305: 'dung beetle'}
+labelsApprox = {243: 'bull mastiff, dog',
+            559: 'folding chair, seat, furniture',
+            438: 'beaker',
+            990: 'buckeye, horse chestnut, conker',
+            949: 'strawberry, fruit',
+            853: 'thatch, thatched roof, house',
+            609: 'jeep, landrover, vehicle, car',
+            915: 'yurt, tent, house, hut',
+            455: 'bottlecap',
+            541: 'drum, membranophone, tympan, instrument',
+            630: 'Loafer, shoe',
+            741: 'prayer rug, prayer mat, carpet',
+            471: 'cannon',
+            129: 'spoonbill, bird',
+            99: 'goose, bird',
+            251: 'dalmatian, coach dog, carriage dog',
+            22: 'bald eagle, American eagle, Haliaeetus leucocephalus, bird',
+            317: 'leafhopper, insect, bug',
+            305: 'dung beetle, insect, bug'}
 
 attacks = [
     foolbox.attacks.LinfPGD(),
