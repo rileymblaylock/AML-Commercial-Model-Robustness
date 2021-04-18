@@ -1,0 +1,19 @@
+Classifying BIA perturbed images outputs:
+
+{ 0.1
+  "probabilities": [
+    {
+      "probability": 0.9998331,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.00015581072,
+      "label": "bull_mastiff"
+    },
+    {
+      "probability": 0.000011054247,
+      "label": "strawberry"
+    }
+  ],
+  "object": "predictresponse"
+}
