@@ -1,58 +1,37 @@
-{"object":"list","data":
-[
-
-{"id":1265357,
-"name":"mountainvsbeach",
-"createdAt":"2021-04-16T16:17:17.000+0000",
-"updatedAt":"2021-04-16T16:17:27.000+0000",
-"labelSummary":
-{
-"labels":
+{"object":"list",
+"data":
 [{
-"id":0,
-"datasetId":1265357,
-"name":"Beaches",
-"numExamples":49},
-{"id":1,
-"datasetId":1265357,
-"name":"Mountains",
-"numExamples":50}
-]},
-"totalExamples":99,
-"totalLabels":2,
-"available":true,
-"statusMsg":"SUCCEEDED",
-"type":"image",
-"language":"N/A",
-"numOfDuplicates":0,
-"object":"dataset"},
-
-{"id":1265438,
-"name":"metamind",
-"createdAt":"2021-04-17T04:02:01.000+0000",
-"updatedAt":"2021-04-17T04:02:11.000+0000",
-"labelSummary":
-{"labels":
-[{
-"id":0,
-"datasetId":1265438,
-"name":"french_horn",
-"numExamples":105},
-{"id":1,
-"datasetId":1265438,
-"name":"parachute",
-"numExamples":105},
-{"id":2,
-"datasetId":1265438,
-"name":"chainsaw",
-"numExamples":98}
-]},
-"totalExamples":308,
-"totalLabels":3,
-"available":true,
-"statusMsg":"SUCCEEDED",
-"type":"image",
-"language":"N/A",
-"numOfDuplicates":0,
-"object":"dataset"}
-]}
+    "id":1265484,
+    "name":"meta",
+    "createdAt":"2021-04-17T17:55:39.000+0000",
+    "updatedAt":"2021-04-17T18:00:33.000+0000",
+    "labelSummary":
+    {
+        "labels":
+        [{
+            "id":0,
+            "datasetId":1265484,
+            "name":"bull_mastiff",
+            "numExamples":48
+            },
+            {"id":1,
+            "datasetId":1265484,
+            "name":"strawberry",
+            "numExamples":44
+            },
+            {"id":2,
+            "datasetId":1265484,
+            "name":"horse_chestnut",
+            "numExamples":48
+        }]
+    },
+    "totalExamples":140,
+    "totalLabels":3,
+    "available":true,
+    "statusMsg":"SUCCEEDED",
+    "type":"image",
+    "language":"N/A",
+    "numOfDuplicates":0,
+    "object":"dataset"
+    }
+    ]}

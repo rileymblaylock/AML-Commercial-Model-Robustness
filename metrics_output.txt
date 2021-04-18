@@ -1,0 +1,14 @@
+{
+    "id":"TW2DN6VIJB2SMRQ7WG5Y2HFEZY",
+    "metricsData":{"f1":[1,1,1],
+    "labels":["bull_mastiff",
+    "strawberry",
+    "horse_chestnut"],
+    "testAccuracy":1,
+    "trainingLoss":0.0112,
+    "confusionMatrix":[[3,0,0],[0,4,0],[0,0,4]],
+    "trainingAccuracy":0.9966},
+    "createdAt":"2021-04-17T18:16:34.000+0000",
+    "language":"N/A",
+    "object":"metrics"
+}
