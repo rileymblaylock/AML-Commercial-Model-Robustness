@@ -12,14 +12,16 @@
 1_tensor(990)_.png Missed: TRUE: buckeye, horse chestnut, conker, plant // GIVEN: colorfulness or pattern or electric blue EPSVAL: 0.5
 Overall Accuracy: 70.0%
 Accuracy per Epsilon: 
-Epsilon value original accuracy: 100%
-Epsilon value 0.0005 accuracy: 100%
-Epsilon value 0.001 accuracy: 100%
-Epsilon value 0.005 accuracy: 100%
-Epsilon value 0.01 accuracy: 100%
+Epsilon value 0.0005 accuracy: 50.0%
+Epsilon of 0.0005 was misclassified 5 times.
+Epsilon value 0.001 accuracy: 50.0%
+Epsilon of 0.001 was misclassified 5 times.
+Epsilon value 0.005 accuracy: 50.0%
+Epsilon of 0.005 was misclassified 5 times.
+Epsilon value 0.01 accuracy: 50.0%
+Epsilon of 0.01 was misclassified 5 times.
 Epsilon value 0.05 accuracy: 100%
-Epsilon value 0.1 accuracy: 40.0%
-Epsilon of 0.1 was misclassified 2 times.
-Epsilon value 0.5 accuracy: 100.0%
-Epsilon of 0.5 was misclassified 10 times.
-Epsilon value 1.0 accuracy: 100%
+Epsilon value 0.1 accuracy: 50.0%
+Epsilon of 0.1 was misclassified 5 times.
+Epsilon value 0.5 accuracy: 50.0%
+Epsilon of 0.5 was misclassified 15 times.

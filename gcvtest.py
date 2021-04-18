@@ -28,27 +28,15 @@ labelsApprox = {243: 'bull mastiff, dog',
             305: 'dung beetle, insect, bug'}
 epsilons = [0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5]
 epsCorrect = {
-            'original': 0,
             0.0005 : 0,
             0.001 : 0,
             0.005 : 0,
             0.01 : 0,
             0.05 : 0,
             0.1 : 0,
-            0.5 : 0,
-            1.0 : 0
+            0.5 : 0
             }
-epsWrong = {
-            'original': 0, 
-            0.0005 : 0, 
-            0.001 : 0, 
-            0.005 : 0, 
-            0.01 : 0, 
-            0.05 : 0, 
-            0.1 : 0, 
-            0.5 : 0, 
-            1.0 : 0
-            }
+epsWrong = epsCorrect
 #set paths
 path = path + '\\pics\\resnet\\'
 biapath = path + '\\bia\\'
@@ -81,7 +69,7 @@ def detect_labels(path):
             #determine if output labels match true and record
             numCorrectLocal=0
             print('Labels:')
-            for label in labels:
+            for label in labels[:5]:
                 print(label.description.lower())
                 if(label.description.lower() in classLabel):
                     numCorrectLocal+=1

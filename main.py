@@ -44,11 +44,11 @@ def showCompare(image, adverseImage):
     plt.show()
 
 #only trained on imagenet
-resnet = models.resnet34(pretrained=True).eval()
-#googlenet = models.googlenet(pretrained=True).eval()
+#resnet = models.resnet34(pretrained=True).eval()
+googlenet = models.googlenet(pretrained=True).eval()
 preprocessing = dict(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], axis=-3)
 #change model, resnet or googlenet
-model = foolbox.models.PyTorchModel(resnet, bounds=(0,1), preprocessing=preprocessing)
+model = foolbox.models.PyTorchModel(googlenet, bounds=(0,1), preprocessing=preprocessing)
 images, labels = foolbox.utils.samples(model, dataset='imagenet', batchsize=batch, data_format='channels_first', bounds=(0, 1))
 #labels are numbers but correspond to imagenet human readable labels in the actual imagenet class label list
 print(images.shape)
@@ -119,11 +119,11 @@ for x, attack in enumerate(attacks):
         for j in range(batch):
             if (epsilons[i] == 0.0):
                 #change folder to resnet or googlenet
-                filepath = 'pics/resnet/'+str(attackNames[x])+'/original'+str(labels[j])+'.png'
+                filepath = 'pics/googlenet/'+str(attackNames[x])+'/original'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
             else: 
                 #this names each images after its epsilon value, and its integer class label
-                filepath = 'pics/resnet/'+str(attackNames[x])+'/'+str(epsilons[i])+'_'+str(labels[j])+'.png'
+                filepath = 'pics/googlenet/'+str(attackNames[x])+'/'+str(epsilons[i])+'_'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
                 #showCompare(images[i],raw_advs[j])
         for y in raw_advs:
