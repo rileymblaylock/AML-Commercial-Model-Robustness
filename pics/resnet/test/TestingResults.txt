@@ -1,0 +1,27 @@
+0.1_tensor(438)_.png Missed: TRUE: beaker, bottle, liquid // GIVEN: drinkware or organism or gesture EPSVAL: 0.1
+0.1_tensor(949)_.png Missed: TRUE: strawberry, fruit // GIVEN: plant or natural foods or produce EPSVAL: 0.1
+0.5_tensor(243)_.png Missed: TRUE: bull mastiff, dog // GIVEN: organism or aqua or art EPSVAL: 0.5
+0.5_tensor(438)_.png Missed: TRUE: beaker, bottle, liquid // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(559)_.png Missed: TRUE: folding chair, seat, furniture // GIVEN: art or pattern or symmetry EPSVAL: 0.5
+0.5_tensor(949)_.png Missed: TRUE: strawberry, fruit // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(990)_.png Missed: TRUE: buckeye, horse chestnut, conker, plant // GIVEN: art or pattern or circle EPSVAL: 0.5
+1_tensor(243)_.png Missed: TRUE: bull mastiff, dog // GIVEN: colorfulness or pattern or electric blue EPSVAL: 0.5
+1_tensor(438)_.png Missed: TRUE: beaker, bottle, liquid // GIVEN: colorfulness or electric blue or pattern EPSVAL: 0.5
+1_tensor(559)_.png Missed: TRUE: folding chair, seat, furniture // GIVEN: colorfulness or art or magenta EPSVAL: 0.5
+1_tensor(949)_.png Missed: TRUE: strawberry, fruit // GIVEN: colorfulness or azure or magenta EPSVAL: 0.5
+1_tensor(990)_.png Missed: TRUE: buckeye, horse chestnut, conker, plant // GIVEN: colorfulness or pattern or electric blue EPSVAL: 0.5
+Overall Accuracy: 70.0%
+Accuracy per Epsilon: 
+Epsilon value 0.0005 accuracy: 50.0%
+Epsilon of 0.0005 was misclassified 5 times.
+Epsilon value 0.001 accuracy: 50.0%
+Epsilon of 0.001 was misclassified 5 times.
+Epsilon value 0.005 accuracy: 50.0%
+Epsilon of 0.005 was misclassified 5 times.
+Epsilon value 0.01 accuracy: 50.0%
+Epsilon of 0.01 was misclassified 5 times.
+Epsilon value 0.05 accuracy: 100%
+Epsilon value 0.1 accuracy: 50.0%
+Epsilon of 0.1 was misclassified 5 times.
+Epsilon value 0.5 accuracy: 50.0%
+Epsilon of 0.5 was misclassified 15 times.

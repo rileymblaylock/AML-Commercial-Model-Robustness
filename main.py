@@ -9,13 +9,13 @@ size = 224
 #classes for imagenet is 1000, for cifar10 is 10
 classes = 1000
 
-
 import foolbox, torch
 import matplotlib.pyplot as plt
 import numpy as np
 from torchvision.utils import save_image
 import torchvision.models as models
 from PIL import Image 
+import scipy
 
 def showCompare(image, adverseImage):
     print(image.shape)
@@ -44,9 +44,11 @@ def showCompare(image, adverseImage):
     plt.show()
 
 #only trained on imagenet
-resnet = models.resnet34(pretrained=True).eval()
+#resnet = models.resnet34(pretrained=True).eval()
+googlenet = models.googlenet(pretrained=True).eval()
 preprocessing = dict(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], axis=-3)
-model = foolbox.models.PyTorchModel(resnet, bounds=(0,1), preprocessing=preprocessing)
+#change model, resnet or googlenet
+model = foolbox.models.PyTorchModel(googlenet, bounds=(0,1), preprocessing=preprocessing)
 images, labels = foolbox.utils.samples(model, dataset='imagenet', batchsize=batch, data_format='channels_first', bounds=(0, 1))
 #labels are numbers but correspond to imagenet human readable labels in the actual imagenet class label list
 print(images.shape)
@@ -56,6 +58,7 @@ print(images.shape)
 print("Labels: ", labels)
 clean_acc = foolbox.utils.accuracy(model, images, labels)
 print(f"clean accuracy:  {clean_acc * 100:.1f} %")
+
 labelsReal = {243: 'bull mastiff',
             559: 'folding chair',
             438: 'beaker',
@@ -94,35 +97,33 @@ labelsApprox = {243: 'bull mastiff, dog',
             22: 'bald eagle, American eagle, Haliaeetus leucocephalus, bird',
             317: 'leafhopper, insect, bug',
             305: 'dung beetle, insect, bug'}
-
 attacks = [
     foolbox.attacks.LinfPGD(),
     foolbox.attacks.FGSM(),
     foolbox.attacks.LinfBasicIterativeAttack()
-]
+    ]
 attackNames = ['pgd', 'fgsm', 'bia']
 epsilons = [
-    0.0,
     0.0005,
     0.001,
     0.005,
     0.01,
     0.1,
-    0.5,
-    1
-]
+    0.5
+    ]
+
 for x, attack in enumerate(attacks):
     raw_advs, clipped_advs, success = attack(model, images, labels, epsilons=epsilons)
     #first index is epsilon, 2nd is batch index
     for i in range(len(epsilons)):
         for j in range(batch):
             if (epsilons[i] == 0.0):
-                filepath = 'pics/'+str(attackNames[x])+'/original'+str(labels[j])+'_.png'
+                #change folder to resnet or googlenet
+                filepath = 'pics/googlenet/'+str(attackNames[x])+'/original'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
             else: 
-                #this currently jus names each images after its epsilon value, and the (useless) float value class label.
-                #this is less than ideal, need to get proper class label
-                filepath = 'pics/'+str(attackNames[x])+'/'+str(epsilons[i])+'_'+str(labels[j])+'_.png'
+                #this names each images after its epsilon value, and its integer class label
+                filepath = 'pics/googlenet/'+str(attackNames[x])+'/'+str(epsilons[i])+'_'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
                 #showCompare(images[i],raw_advs[j])
         for y in raw_advs:
