@@ -1,0 +1,37 @@
+{"object":"list",
+"data":
+[{
+    "id":1265484,
+    "name":"meta",
+    "createdAt":"2021-04-17T17:55:39.000+0000",
+    "updatedAt":"2021-04-17T18:00:33.000+0000",
+    "labelSummary":
+    {
+        "labels":
+        [{
+            "id":0,
+            "datasetId":1265484,
+            "name":"bull_mastiff",
+            "numExamples":48
+            },
+            {"id":1,
+            "datasetId":1265484,
+            "name":"strawberry",
+            "numExamples":44
+            },
+            {"id":2,
+            "datasetId":1265484,
+            "name":"horse_chestnut",
+            "numExamples":48
+        }]
+    },
+    "totalExamples":140,
+    "totalLabels":3,
+    "available":true,
+    "statusMsg":"SUCCEEDED",
+    "type":"image",
+    "language":"N/A",
+    "numOfDuplicates":0,
+    "object":"dataset"
+    }
+    ]}

@@ -1,0 +1,329 @@
+Classifying BIA perturbed images outputs:
+
+{ //0.1
+  "probabilities": [
+    {
+      "probability": 0.9999982,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.0000015431172,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 2.4045633e-7,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.01
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.3886429e-8,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 9.692237e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.001
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.5
+  "probabilities": [
+    {
+      "probability": 0.53647983,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.4408184,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.022701796,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 5.2656897e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 3.7061476e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.0005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+Classifying FGSM perturbed images outputs:
+
+{ //0.1
+  "probabilities": [
+    {
+      "probability": 0.99999964,
+      "label": "strawberry"
+    },
+    {
+      "probability": 2.9655223e-7,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 9.488291e-8,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.01
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.24054536e-8,
+      "label": "bull_mastiff"
+    },
+    {
+      "probability": 1.04462e-8,
+      "label": "horse_chestnut"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.001
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.5
+  "probabilities": [
+    {
+      "probability": 0.93213785,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.0476984,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.020163782,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 4.6441726e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 3.2717682e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.0005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+Classifying PGD perturbed images outputs:
+
+{ //0.1
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.1391813e-8,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.5990309e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.01
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 6.9556574e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 4.306872e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.001
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.5
+  "probabilities": [
+    {
+      "probability": 0.74611765,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.24006706,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.0138152605,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 2.7887301e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 2.2899949e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+{ //0.0005
+  "probabilities": [
+    {
+      "probability": 1,
+      "label": "strawberry"
+    },
+    {
+      "probability": 1.367181e-9,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 1.0715255e-9,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}

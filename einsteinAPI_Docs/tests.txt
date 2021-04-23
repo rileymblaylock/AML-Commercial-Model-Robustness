@@ -1,0 +1,62 @@
+Classify a red image:
+https://colourlex.com/wp-content/uploads/2017/03/Chrome-red-painted-swatch-203-FB.jpg
+
+{
+  "probabilities": [
+    {
+      "probability": 0.79007703,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.14599425,
+      "label": "bull_mastiff"
+    },
+    {
+      "probability": 0.06392872,
+      "label": "horse_chestnut"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+Classify horse image:
+https://www.treehugger.com/thmb/4POnzxta535OuxqNIRBWCUzK39M=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/horse.primary-e9a47e1c486c4fb7bf729e05b59cf0df.jpg
+
+{
+  "probabilities": [
+    {
+      "probability": 0.9928473,
+      "label": "bull_mastiff"
+    },
+    {
+      "probability": 0.006775987,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.00037670962,
+      "label": "strawberry"
+    }
+  ],
+  "object": "predictresponse"
+}
+
+Classify green apple image:
+https://sc04.alicdn.com/kf/HTB1Hnm.JFXXXXXQXpXXq6xXFXXX2.jpg
+
+{
+  "probabilities": [
+    {
+      "probability": 0.9655869,
+      "label": "horse_chestnut"
+    },
+    {
+      "probability": 0.024055922,
+      "label": "strawberry"
+    },
+    {
+      "probability": 0.010357212,
+      "label": "bull_mastiff"
+    }
+  ],
+  "object": "predictresponse"
+}
