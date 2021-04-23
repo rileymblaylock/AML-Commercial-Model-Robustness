@@ -86,7 +86,7 @@ labelsApprox = {243: 'bull mastiff, dog',
             853: 'thatch, thatched roof, house',
             609: 'jeep, landrover, vehicle, car',
             915: 'yurt, tent, house, hut',
-            455: 'bottlecap',
+            455: 'bottlecap, bottle cap',
             541: 'drum, membranophone, tympan, instrument',
             630: 'Loafer, shoe',
             741: 'prayer rug, prayer mat, carpet',
@@ -104,10 +104,12 @@ attacks = [
     ]
 attackNames = ['pgd', 'fgsm', 'bia']
 epsilons = [
+    0.0000,
     0.0005,
     0.001,
     0.005,
     0.01,
+    0.05,
     0.1,
     0.5
     ]
@@ -117,7 +119,7 @@ for x, attack in enumerate(attacks):
     #first index is epsilon, 2nd is batch index
     for i in range(len(epsilons)):
         for j in range(batch):
-            if (epsilons[i] == 0.0):
+            if (epsilons[i] == 0.0000):
                 #change folder to resnet or googlenet
                 filepath = 'pics/googlenet/'+str(attackNames[x])+'/original'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
@@ -125,8 +127,8 @@ for x, attack in enumerate(attacks):
                 #this names each images after its epsilon value, and its integer class label
                 filepath = 'pics/googlenet/'+str(attackNames[x])+'/'+str(epsilons[i])+'_'+str(labels[j])+'.png'
                 save_image(raw_advs[i][j], filepath)
-                #showCompare(images[i],raw_advs[j])
-        for y in raw_advs:
-            adv_acc = foolbox.utils.accuracy(model, y, labels)
-            print(f"adv accuracy:  {adv_acc * 100:.1f} %")
+                #showCompare(images[j],raw_advs[i][j])
+        #for y in raw_advs:
+            #adv_acc = foolbox.utils.accuracy(model, y, labels)
+            #print(f"adv accuracy:  {adv_acc * 100:.1f} %")
 
