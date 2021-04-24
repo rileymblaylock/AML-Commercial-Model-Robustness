@@ -19,7 +19,7 @@ labelsApprox = {243: 'bull mastiff, dog, dog breed',
             455: 'bottlecap, bottle cap',
             541: 'drum, membranophone, tympan, instrument',
             630: 'Loafer, shoe',
-            741: 'prayer rug, prayer mat, carpet, textile',
+            741: 'art, glass, stained glass, wall',
             471: 'cannon',
             129: 'spoonbill, bird',
             99: 'goose, bird',
@@ -80,7 +80,7 @@ def detect_labels(path):
             #determine if output labels match true and record
             flag = False
             print('Labels:')
-            for label in labels[:7]:
+            for label in labels[:5]:
                 print(label.description.lower())
                 if(label.description.lower() in classLabel and flag == False):
                     flag = True
@@ -120,7 +120,7 @@ def detect_labels(path):
     plt.bar(indices, newepsCorrect.values(), width=w, color='b', align='center')
     plt.bar(indices+w, newEpsWrong.values(), width=w, color='r', align='center')
     plt.autoscale(tight=True)
-    plt.title('GoogLeNet Gen. Accuracy - BIA Attack')
+    plt.title('GoogLeNet Gen. Accuracy - FGSM Attack')
     plt.xlabel('Epsilon value')
     plt.ylabel('Number Classified')
     plt.xticks(indices, newepsCorrect.keys())
@@ -132,4 +132,4 @@ def detect_labels(path):
     plt.show()
 
 
-detect_labels(biapath)
+detect_labels(fgsmpath)

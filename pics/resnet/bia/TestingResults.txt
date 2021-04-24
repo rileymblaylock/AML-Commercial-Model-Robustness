@@ -1,0 +1,52 @@
+0.0005_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.0005
+0.001_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.001
+0.005_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.005
+0.005_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: plant or building or window EPSVAL: 0.005
+0.01_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or badge EPSVAL: 0.01
+0.01_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: plant or window or building EPSVAL: 0.01
+0.05_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: felidae or fawn or grass EPSVAL: 0.05
+0.05_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.05
+0.05_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: plant or building or window EPSVAL: 0.05
+0.05_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: food or plant or natural foods EPSVAL: 0.05
+0.1_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: felidae or military camouflage or small to medium-sized cats EPSVAL: 0.1
+0.1_tensor(438).png Missed: TRUE: beaker, bottle, liquid // GIVEN: drinkware or organism or gesture EPSVAL: 0.1
+0.1_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: art or badge or circle EPSVAL: 0.1
+0.1_tensor(471).png Missed: TRUE: cannon // GIVEN: wheel or spoke or metal EPSVAL: 0.1
+0.1_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: plant or natural foods or produce EPSVAL: 0.1
+0.5_tensor(129).png Missed: TRUE: spoonbill, bird // GIVEN: colorfulness or rectangle or art EPSVAL: 0.5
+0.5_tensor(22).png Missed: TRUE: bald eagle, American eagle, Haliaeetus leucocephalus, bird // GIVEN: art or pattern or electric blue EPSVAL: 0.5
+0.5_tensor(243).png Missed: TRUE: bull mastiff, dog, dog breed // GIVEN: organism or aqua or art EPSVAL: 0.5
+0.5_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: art or pattern or symmetry EPSVAL: 0.5
+0.5_tensor(305).png Missed: TRUE: dung beetle, insect, bug // GIVEN: art or pattern or electric blue EPSVAL: 0.5
+0.5_tensor(317).png Missed: TRUE: leafhopper, insect, bug // GIVEN: people in nature or art or pattern EPSVAL: 0.5
+0.5_tensor(438).png Missed: TRUE: beaker, bottle, liquid // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(471).png Missed: TRUE: cannon // GIVEN: pattern or art or circle EPSVAL: 0.5
+0.5_tensor(541).png Missed: TRUE: drum, membranophone, tympan, instrument // GIVEN: art or pattern or electric blue EPSVAL: 0.5
+0.5_tensor(559).png Missed: TRUE: folding chair, seat, furniture // GIVEN: art or pattern or symmetry EPSVAL: 0.5
+0.5_tensor(609).png Missed: TRUE: jeep, landrover, vehicle, car // GIVEN: art or electric blue or pattern EPSVAL: 0.5
+0.5_tensor(630).png Missed: TRUE: Loafer, shoe // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: colorfulness or art or pattern EPSVAL: 0.5
+0.5_tensor(915).png Missed: TRUE: yurt, tent, house, hut, building // GIVEN: art or pattern or electric blue EPSVAL: 0.5
+0.5_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: art or pattern or circle EPSVAL: 0.5
+0.5_tensor(99).png Missed: TRUE: goose, bird // GIVEN: plant or flower or art EPSVAL: 0.5
+0.5_tensor(990).png Missed: TRUE: buckeye, horse chestnut, conker, plant // GIVEN: art or pattern or circle EPSVAL: 0.5
+originaltensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: original
+Overall Accuracy: 77.63157894736842%
+Accuracy per Epsilon: 
+Epsilon value original accuracy: 5.263157894736842%
+Epsilon of original was misclassified 1 times.
+Epsilon value 0.0005 accuracy: 5.263157894736842%
+Epsilon of 0.0005 was misclassified 1 times.
+Epsilon value 0.001 accuracy: 5.263157894736842%
+Epsilon of 0.001 was misclassified 1 times.
+Epsilon value 0.005 accuracy: 10.526315789473683%
+Epsilon of 0.005 was misclassified 2 times.
+Epsilon value 0.01 accuracy: 10.526315789473683%
+Epsilon of 0.01 was misclassified 2 times.
+Epsilon value 0.05 accuracy: 21.052631578947366%
+Epsilon of 0.05 was misclassified 4 times.
+Epsilon value 0.1 accuracy: 26.31578947368421%
+Epsilon of 0.1 was misclassified 5 times.
+Epsilon value 0.5 accuracy: 94.73684210526315%
+Epsilon of 0.5 was misclassified 18 times.

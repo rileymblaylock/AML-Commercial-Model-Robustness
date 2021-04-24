@@ -1,0 +1,55 @@
+0.0005_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.0005
+0.001_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: 0.001
+0.005_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or badge EPSVAL: 0.005
+0.01_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or pattern EPSVAL: 0.01
+0.01_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: plant or window or building EPSVAL: 0.01
+0.05_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: felidae or terrestrial animal or grass EPSVAL: 0.05
+0.05_tensor(438).png Missed: TRUE: beaker, bottle, liquid // GIVEN: plant or flowerpot or organism EPSVAL: 0.05
+0.05_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: textile or art or pattern EPSVAL: 0.05
+0.05_tensor(630).png Missed: TRUE: Loafer, shoe // GIVEN: brown or product or grey EPSVAL: 0.05
+0.05_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: food or plant or natural foods EPSVAL: 0.05
+0.1_tensor(129).png Missed: TRUE: spoonbill, bird // GIVEN: pattern or twig or art EPSVAL: 0.1
+0.1_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: felidae or organism or terrestrial animal EPSVAL: 0.1
+0.1_tensor(438).png Missed: TRUE: beaker, bottle, liquid // GIVEN: creative arts or art or pattern EPSVAL: 0.1
+0.1_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: art or circle or pattern EPSVAL: 0.1
+0.1_tensor(471).png Missed: TRUE: cannon // GIVEN: wheel or bicycle tire or bicycle EPSVAL: 0.1
+0.1_tensor(630).png Missed: TRUE: Loafer, shoe // GIVEN: human body or pattern or terrestrial plant EPSVAL: 0.1
+0.1_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: plant or building or grass EPSVAL: 0.1
+0.1_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: food or natural foods or art EPSVAL: 0.1
+0.5_tensor(129).png Missed: TRUE: spoonbill, bird // GIVEN: circle or symmetry or pattern EPSVAL: 0.5
+0.5_tensor(22).png Missed: TRUE: bald eagle, American eagle, Haliaeetus leucocephalus, bird // GIVEN: colorfulness or circle or pattern EPSVAL: 0.5
+0.5_tensor(243).png Missed: TRUE: bull mastiff, dog, dog breed // GIVEN: colorfulness or art or symmetry EPSVAL: 0.5
+0.5_tensor(251).png Missed: TRUE: dalmatian, coach dog, carriage dog, dog breed, dog // GIVEN: colorfulness or art or circle EPSVAL: 0.5
+0.5_tensor(305).png Missed: TRUE: dung beetle, insect, bug // GIVEN: colorfulness or circle or symmetry EPSVAL: 0.5
+0.5_tensor(317).png Missed: TRUE: leafhopper, insect, bug // GIVEN: colorfulness or art or pattern EPSVAL: 0.5
+0.5_tensor(438).png Missed: TRUE: beaker, bottle, liquid // GIVEN: colorfulness or circle or art EPSVAL: 0.5
+0.5_tensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: colorfulness or art or circle EPSVAL: 0.5
+0.5_tensor(471).png Missed: TRUE: cannon // GIVEN: colorfulness or pattern or circle EPSVAL: 0.5
+0.5_tensor(541).png Missed: TRUE: drum, membranophone, tympan, instrument // GIVEN: colorfulness or art or pattern EPSVAL: 0.5
+0.5_tensor(559).png Missed: TRUE: folding chair, seat, furniture // GIVEN: colorfulness or pattern or circle EPSVAL: 0.5
+0.5_tensor(609).png Missed: TRUE: jeep, landrover, vehicle, car // GIVEN: colorfulness or pattern or circle EPSVAL: 0.5
+0.5_tensor(630).png Missed: TRUE: Loafer, shoe // GIVEN: circle or pattern or electric blue EPSVAL: 0.5
+0.5_tensor(853).png Missed: TRUE: thatch, thatched roof, house // GIVEN: colorfulness or pattern or circle EPSVAL: 0.5
+0.5_tensor(915).png Missed: TRUE: yurt, tent, house, hut, building // GIVEN: colorfulness or art or circle EPSVAL: 0.5
+0.5_tensor(949).png Missed: TRUE: strawberry, fruit // GIVEN: colorfulness or art or circle EPSVAL: 0.5
+0.5_tensor(99).png Missed: TRUE: goose, bird // GIVEN: colorfulness or art or circle EPSVAL: 0.5
+0.5_tensor(990).png Missed: TRUE: buckeye, horse chestnut, conker, plant // GIVEN: colorfulness or art or pattern EPSVAL: 0.5
+originaltensor(455).png Missed: TRUE: bottlecap, bottle cap // GIVEN: font or art or circle EPSVAL: original
+Overall Accuracy: 75.6578947368421%
+Accuracy per Epsilon: 
+Epsilon value original accuracy: 5.263157894736842%
+Epsilon of original was misclassified 1 times.
+Epsilon value 0.0005 accuracy: 5.263157894736842%
+Epsilon of 0.0005 was misclassified 1 times.
+Epsilon value 0.001 accuracy: 5.263157894736842%
+Epsilon of 0.001 was misclassified 1 times.
+Epsilon value 0.005 accuracy: 5.263157894736842%
+Epsilon of 0.005 was misclassified 1 times.
+Epsilon value 0.01 accuracy: 10.526315789473683%
+Epsilon of 0.01 was misclassified 2 times.
+Epsilon value 0.05 accuracy: 26.31578947368421%
+Epsilon of 0.05 was misclassified 5 times.
+Epsilon value 0.1 accuracy: 42.10526315789473%
+Epsilon of 0.1 was misclassified 8 times.
+Epsilon value 0.5 accuracy: 94.73684210526315%
+Epsilon of 0.5 was misclassified 18 times.
