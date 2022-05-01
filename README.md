@@ -1,3 +1,5 @@
+This was a project I created during grad school
+
 # AML Commercial Model Robustness
  Testing the robustness of three state-of-the-art commercial image recognition models to adversarial attacks
 
